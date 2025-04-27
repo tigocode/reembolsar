@@ -1,7 +1,7 @@
-import styles from "./SignIn.module.css"
+import styles from "./SignUp.module.css"
 import Link from "next/link";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <div className={styles.container}>
       <div className={styles.containerBox}>
@@ -10,6 +10,10 @@ export default function SignIn() {
         </div>
         <div className={styles.containerForm}>
           <div className={styles.containerInput}>
+            <label htmlFor="">NOME</label>
+            <input type="text" />
+          </div>
+          <div className={styles.containerInput}>
             <label htmlFor="">E-MAIL</label>
             <input type="text" />
           </div>
@@ -17,10 +21,14 @@ export default function SignIn() {
             <label htmlFor="">SENHA</label>
             <input type="text" />
           </div>
-          <button className={styles.button}>Entrar</button>
+          <div className={styles.containerInput}>
+            <label htmlFor="">CONFIRME A SENHA</label>
+            <input type="text" />
+          </div>
+          <button className={styles.button}>Cadastar</button>
         </div>
-        <Link href="/SignUp" className={styles.SignUp}>
-          <span>Criar Conta</span>
+        <Link href="/" className={styles.SignUp}>
+          <span>Já tenho uma conta</span>
         </Link>
       </div>
     </div>
