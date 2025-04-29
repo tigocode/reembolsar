@@ -19,11 +19,11 @@ export default function SignUp() {
           </div>
           <div className={styles.containerInput}>
             <label htmlFor="">SENHA</label>
-            <input type="text" />
+            <input type="password" />
           </div>
           <div className={styles.containerInput}>
             <label htmlFor="">CONFIRME A SENHA</label>
-            <input type="text" />
+            <input type="password" />
           </div>
           <button className={styles.button}>Cadastar</button>
         </div>

@@ -15,11 +15,11 @@ export default function SignIn() {
           </div>
           <div className={styles.containerInput}>
             <label htmlFor="">SENHA</label>
-            <input type="text" />
+            <input type="password" />
           </div>
           <button className={styles.button}>Entrar</button>
         </div>
-        <Link href="/SignUp" className={styles.SignUp}>
+        <Link href="/Auth/SignUp" className={styles.SignUp}>
           <span>Criar Conta</span>
         </Link>
       </div>
