@@ -7,6 +7,49 @@
   width: 100vw;
   height: 100vh;
 }
+.containerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 462px;
+  height: 404px;
+
+  padding: 32px;
+
+  background: #F9FBFA;
+  border: 1px solid #F9FBFA;
+  border-radius: 18px;
+  gap: 32px;
+}
+.containerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  background: none;
+}
+.containerLogo h1 {
+  background: none;
+  color: #1F8459;
+  font-family: "Sail", cursive;
+  font-size: 40px;
+  font-weight: 400;
+}
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 398px;
+  height: 220px;
+
+  gap: 16px;
+  background: none;
+}
 .containerInput {
   display: flex;
   flex-direction: column;
@@ -16,4 +59,104 @@
   height: 70px;
 
   background: none;
+}
+.containerInput label {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: left;
+  background: none;
+
+  color: #9aa09e;
+}
+.containerInput input {
+  height: 48px;
+  border-radius: 8px;
+  border: 3px solid #CDD5D2;
+  padding-left: 16px;
+  background: none;
+  color: #7a807e;
+  outline-color: #8e9190;
+}
+.button {
+  width: 100%;
+  height: 48px;
+
+  border-radius: 8px;
+  background: #1F8459;
+  border: 1px solid #1F8459;
+  border-radius: 8px;
+
+  font-size: 17px;
+  font-weight: 600;
+  color: #FFF;
+  cursor: pointer;
+}
+.SignUp {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+  background: none;
+  text-decoration: none;
+}
+.SignUp span {
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1F2523;
+}
+
+@media (max-width: 1024px) and  (min-width: 767px) {
+  .containerBox {
+    width: 80%;
+    height: 40%;
+    padding: 16px;
+    gap: 62px;
+  }
+  .containerForm {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+  }  
+}
+@media (max-width: 768px) {
+  .containerBox {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    gap: 62px;
+  }
+  .containerForm {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+  }  
+}
+@media (max-width: 480px) {
+  .containerBox {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    gap: 62px;
+  }
+  .containerForm {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+  }  
+}
+@media (max-width: 320px) {
+  .containerBox {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    gap: 62px;
+  }
+  .containerForm {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+  }  
 }

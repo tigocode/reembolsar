@@ -1,32 +1,29 @@
-import Box from "@/components/Box";
-import Logo from "@/components/Logo";
-import From from "@/components/Form";
-import Label from "@/components/Label";
-import Input from "@/components/Input";
-import Button from "@/components/Button";
+import Link from "next/link";
 
 import styles from "./styles.module.css";
 
 export default function Home() {
   return (
-    < div className={styles.container}>
-      <Box>
-        <Logo />
-        <From>
+    <div className={styles.container}>
+      <div className={styles.containerBox}>
+        <div className={styles.containerLogo}>
+          <h1>Reembolsar</h1>
+        </div>
+        <div className={styles.containerForm}>
           <div className={styles.containerInput}>
-            <Label
-              text="E-MAIL"
-              htmlFor="email"
-            />
-            <Input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Digite seu e-mail"
-            />
+            <label htmlFor="">E-MAIL</label>
+            <input type="text" />
           </div>
-        </From>
-      </Box>
+          <div className={styles.containerInput}>
+            <label htmlFor="">SENHA</label>
+            <input type="password" />
+          </div>
+          <button className={styles.button}>Entrar</button>
+        </div>
+        <Link href="/Auth/SignUp" className={styles.SignUp}>
+          <span>Criar Conta</span>
+        </Link>
+      </div>
     </div>
   );
 }
