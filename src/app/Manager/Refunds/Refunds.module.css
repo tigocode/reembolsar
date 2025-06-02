@@ -12,7 +12,7 @@
   align-items: space-evenly;
   justify-content: center;
 
-  padding: 40px 0;
+  padding: 25px 0;
 
   width: 100%;
 }
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 92%;
   height: 100%;  
 
   background: #F9FBFA;
@@ -50,15 +50,101 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  gap: 8px;
+
   width: 100%;
   height: 32px;
   background: none;
   padding: 0px 15px;
 }
+.containerUser button {
+  background: none;
+  border: none;
+}
 .containerUser h1 {
   background: none;
   color: #1F8459;
-  font-family: cursive;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
+}
+.containerTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 25px 30px;
+  width: 100%;
+  background: none;
+}
+.containerTitle h2 {
+  font-weight: 600;
+  background: none;
+  color: #1F2523;
+}
+.containerSeach {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+  
+  gap: 12px;
+  
+  width: 100%;
+  background: none;
+  padding: 20px 30px;
+}
+.containerSeach input {
+  width: 100%;
+  height: 40px;
+
+  background: none;
+  color: #1F2523;
+  padding-left: 5px;
+  border-radius: 6px;
+  border: 1px solid #145237d3;  
+}
+.containerSeach button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 41px;
+  height: 41px;
+
+  border-radius: 8px;
+  border: none;
+  background: #1F8459;
+  align-items: center;
+}
+.img {
+  width: 18px;
+  height: 18px;
+  background: none;
+}
+.containerTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background: none;
+}
+.containerTable table {
+  width: 100%;
+  padding: 0px 30px;
+  
+  background: none;
+  text-align: center;
+}
+.containerTable table th {
+  background: #F9FBFA;
+  color: #1F2523;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 2px solid #1F8459;
+}
+.containerTable table td {
+  background: #F9FBFA;
+  color: #1F2523;
+  padding: 5px 0;
 }
