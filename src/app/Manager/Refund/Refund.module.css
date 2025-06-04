@@ -68,6 +68,13 @@
   font-size: 14px;
   font-weight: 400;
 }
+.imgTopo {
+  width:28px;
+  height: 28px;
+  background: none;
+  color: #1F8459;
+  font-weight: 200;
+}
 .containerTitle {
   display: flex;
   justify-content: flex-start;
@@ -79,90 +86,17 @@
 }
 .containerTitle h2 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   background: none;
   color: #1F2523;
 }
-.containerSeach {
+.containerData {
   display: flex;
   justify-content: space-between;
-  align-items: center;;
-  
-  gap: 12px;
-  
-  width: 100%;
-  background: none;
-  padding: 20px 30px;
-}
-.containerSeach input {
-  width: 100%;
-  height: 40px;
-
-  background: none;
-  color: #1F2523;
-  padding-left: 5px;
-  border-radius: 6px;
-  border: 1px solid #145237d3;  
-}
-.containerSeach button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 41px;
-  height: 41px;
-
-  border-radius: 8px;
-  border: none;
-  background: #1F8459;
-  align-items: center;
-  cursor: pointer;
-}
-.img {
-  width: 18px;
-  height: 18px;
-  background: none;
-}
-.containerTable {
-  display: flex;
-  justify-content: center;
   align-items: center;
 
   width: 100%;
-  background: none;
-}
-.containerTable table {
-  width: 100%;
+  height: auto;
   padding: 0px 30px;
-  
   background: none;
-  text-align: center;
-}
-.containerTable table th {
-  background: #F9FBFA;
-  color: #1F2523;
-  font-weight: 500;
-  padding: 8px 0;
-  border-bottom: 2px solid #1F8459;
-}
-.containerTable table td {
-  background: #F9FBFA;
-  color: #1F2523;
-  padding: 5px 0;
-  font-size: 14px;
-}
-.containerTable table td button {
-  width: 60%;
-  height: 30px;
-
-  background: #1e6c4a8f;
-  color: #F9FBFA;
-  border: none;
-  border-radius: 6px;
-  font-weight: 500;
-}
-.containerTable table td button:hover {
-  background: #1F8459;
-  color: #F9FBFA;
-  cursor: pointer;
 }

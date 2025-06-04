@@ -1,6 +1,6 @@
-import Lupa from '@/../../public/Icon.png'
-import Exit from '@/../../public/Frame.png'
-import Image from 'next/image'
+import Lupa from '@/../../public/Icon.png';
+import Exit from '@/../../public/Frame.png';
+import Image from 'next/image';
 
 import styles from './Refunds.module.css';
 
@@ -37,7 +37,7 @@ export default function PageRefunds() {
                 <th>Setor</th>
                 <th>Referência</th>
                 <th>Valor</th>
-                <th>Ações</th>
+                <th>Ação</th>
               </tr>
             </thead>
             <tbody>
@@ -59,6 +59,18 @@ export default function PageRefunds() {
                 </td>
                 <td>Maria Oliveira</td>
                 <td>O&M</td>
+                <td>02/10/2023</td>
+               <td>R$ 200,00</td>
+                <td>
+                  <button>Visualizar</button>
+                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <Image src={Exit} alt="Exit Icon" width={22} height={22} />
+                </td>
+                <td>Caio</td>
+                <td>Juridico</td>
                 <td>02/10/2023</td>
                <td>R$ 200,00</td>
                 <td>
