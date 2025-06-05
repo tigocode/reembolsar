@@ -1,5 +1,6 @@
 
 import { MdOutlineExitToApp, MdRestaurant } from 'react-icons/md';
+import { FaReceipt } from "react-icons/fa";
 import Image from 'next/image';
 import Lupa from '@/../../public/Icon.png';
 
@@ -24,21 +25,46 @@ export default function PageRefund() {
           <h2>Solicitação de Reembolso</h2>
         </div>
         <div className={styles.containerData}>
-          <div>
-            <div>
-              <MdRestaurant />
+          <div className={styles.containerBoxService}>
+            <div className={styles.containerIcons}>
+              <MdRestaurant className={styles.icons} />
             </div>
-            <div>
+            <div className={styles.containerText}>
               <h3>MegaGrill</h3>
               <span>Alimentação</span>
             </div>
           </div>
-          <div>
-            <div>
-              <span>R$ 89,67</span>
+          <div className={styles.containerBoxData}>
+            <div className={styles.containerValue}>
+              <p>R$ </p>
+              <span>209,07</span>
             </div>
-            <div>
-              <Image src={Lupa} />
+            <div className={styles.containerReceipt}>
+              <button>
+                <FaReceipt className={styles.icons} />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className={styles.containerData}>
+          <div className={styles.containerBoxService}>
+            <div className={styles.containerIcons}>
+              <MdRestaurant className={styles.icons} />
+            </div>
+            <div className={styles.containerText}>
+              <h3>MegaGrill</h3>
+              <span>Alimentação</span>
+            </div>
+          </div>
+          <div className={styles.containerBoxData}>
+            <div className={styles.containerValue}>
+              <p>R$ </p>
+              <span>89,67</span>
+            </div>
+            <div className={styles.containerReceipt}>
+              <button>
+                <FaReceipt className={styles.icons} />
+              </button>
             </div>
           </div>
         </div>

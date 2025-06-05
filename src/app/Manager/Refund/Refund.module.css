@@ -3,9 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  padding: 0 30px;
 
+  padding: 0 30px;
 }
 .containerHeader {
   display: flex;
@@ -23,7 +22,7 @@
   align-items: center;
 
   width: 92%;
-  height: 100%;  
+  height: 100%;
 
   background: #F9FBFA;
   border: 1px solid #F9FBFA;
@@ -69,7 +68,7 @@
   font-weight: 400;
 }
 .imgTopo {
-  width:28px;
+  width: 28px;
   height: 28px;
   background: none;
   color: #1F8459;
@@ -97,6 +96,114 @@
 
   width: 100%;
   height: auto;
-  padding: 0px 30px;
+  padding: 12px 30px;
   background: none;
+}
+.containerBoxService {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+
+  width: 450px;
+  height: auto;
+
+  background: none;
+}
+.containerBoxData {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 14px;
+
+  width: 200px;
+  height: auto;
+
+  background: none;
+}
+.containerIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  background: #E4ECE9;
+  border-radius: 50%;
+
+  font-size: 21px;
+  color: #1F8459;
+}
+.icons {
+  background: none;
+}
+.containerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: none;
+}
+.containerText h3,
+.containerText span {
+  background: none;
+}
+.containerText h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2523;
+}
+.containerText span {
+  font-size: 14px;
+  color: #4D5C57;
+}
+.containerValue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  width: auto;
+  height: auto;
+
+  background: none;
+}
+.containerValue p {
+  background: none;
+  color: #4D5C57;
+  font-size: 14px;
+}
+.containerValue span {
+  background: none;
+  color: #1F2523;
+  font-size: 19px;
+  font-weight: 500;
+}
+.containerReceipt {
+  background: none;
+}
+.containerReceipt button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.containerReceipt button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  height: 32px;
+  background: #ccebdf;
+  font-size: 18px;
+  color: #1F8459;
+  border-radius: 6px;
+}
+.containerReceipt button:hover {
+  background: #1F8459;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
