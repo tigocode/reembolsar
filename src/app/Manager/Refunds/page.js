@@ -1,6 +1,9 @@
 import Lupa from '@/../../public/Icon.png';
 import Exit from '@/../../public/Frame.png';
-import Image from 'next/image';
+import Link from 'next/link';
+import { MdEngineering, MdOutlineExitToApp, MdSearch } from "react-icons/md";
+import { GoLaw } from "react-icons/go";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
 
 import styles from './Refunds.module.css';
 
@@ -14,7 +17,7 @@ export default function PageRefunds() {
         <div className={styles.containerUser}>
           <h1>Olá, Admin</h1>
           <button>
-            <Image src={Exit} alt="Exit Icon" width={22} height={22} />
+            <MdOutlineExitToApp className={styles.imgTopo} />
           </button>
         </div>
       </div>
@@ -25,7 +28,7 @@ export default function PageRefunds() {
         <div className={styles.containerSeach}>
           <input type="text" />
           <button>
-            <Image src={Lupa} alt="Search Icon" className={styles.img} />
+            <MdSearch className={styles.img} />
           </button>
         </div>
         <div className={styles.containerTable}>
@@ -43,38 +46,50 @@ export default function PageRefunds() {
             <tbody>
               <tr>
                 <td>
-                  <Image src={Exit} alt="Exit Icon" width={22} height={22} />
+                  <MdEngineering className={styles.Icons} />
                 </td>
                 <td>João Silva</td>
                 <td>Engenharia</td>
                 <td>01/10/2023</td>
-               <td>R$ 150,00</td>
+                <td>R$ 150,00</td>
                 <td>
-                  <button>Visualizar</button>
+                  <button>
+                    <Link href="/Manager/Refund" className={styles.buttonLink}>
+                      Visualizar
+                    </Link>
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Image src={Exit} alt="Exit Icon" width={22} height={22} />
+                  <FaMoneyBillTransfer className={styles.Icons} />
                 </td>
                 <td>Maria Oliveira</td>
-                <td>O&M</td>
+                <td>Financeiro</td>
                 <td>02/10/2023</td>
-               <td>R$ 200,00</td>
+                <td>R$ 200,00</td>
                 <td>
-                  <button>Visualizar</button>
+                   <button>
+                    <Link href="/Manager/Refund" className={styles.buttonLink}>
+                      Visualizar
+                    </Link>
+                  </button>
                 </td>
               </tr>
-                            <tr>
+              <tr>
                 <td>
-                  <Image src={Exit} alt="Exit Icon" width={22} height={22} />
+                  <GoLaw className={styles.Icons} />
                 </td>
                 <td>Caio</td>
                 <td>Juridico</td>
                 <td>02/10/2023</td>
-               <td>R$ 200,00</td>
+                <td>R$ 200,00</td>
                 <td>
-                  <button>Visualizar</button>
+                  <button>
+                    <Link href="/Manager/Refund" className={styles.buttonLink}>
+                      Visualizar
+                    </Link>
+                  </button>
                 </td>
               </tr>
             </tbody>

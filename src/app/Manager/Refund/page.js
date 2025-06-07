@@ -1,8 +1,8 @@
 
-import { MdOutlineExitToApp, MdRestaurant } from 'react-icons/md';
+import { MdOutlineExitToApp, MdRestaurant, MdKeyboardReturn } from 'react-icons/md';
 import { FaReceipt } from "react-icons/fa";
-import Image from 'next/image';
-import Lupa from '@/../../public/Icon.png';
+import { IoReturnDownForward } from "react-icons/io5";
+import Link from 'next/link';
 
 import styles from './Refund.module.css';
 
@@ -23,6 +23,13 @@ export default function PageRefund() {
       <div className={styles.containerBox}>
         <div className={styles.containerTitle}>
           <h2>Solicitação de Reembolso</h2>
+          <Link href={"/Manager/Refunds"} className={styles.containerLink}>
+            <IoReturnDownForward className={styles.linkReturn}/>
+          </Link>
+        </div>
+        <div className={styles.containerTitleUser}>
+          <h3>João Silva</h3>
+          <span>Ref. Mês Jun.25</span>
         </div>
         <div className={styles.containerData}>
           <div className={styles.containerBoxService}>
